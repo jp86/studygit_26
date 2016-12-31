@@ -77,17 +77,10 @@ function unfull(){
 
 
 //websocket
-/*var socket = new WebSocket('ws://' + window.location.host + '/ccs/websocket/pushmsg');
+var socket = new WebSocket('ws://' + window.location.host + '/ccs/pushmsg');
 
-scoket.onmessgae = function(messsage){
-	alert("来消息了 ：" + messgae.data);
+//接收推送消息
+socket.onmessage = function(message){
+	$.messager.alert('信用卡消息',message.data,'warning');
 }
 
-socket.onopen = function(){
-	alert("连接了 ");
-}
-
-scoket.oclose=function(){
-	alert("关闭了 ");
-}
-*/
