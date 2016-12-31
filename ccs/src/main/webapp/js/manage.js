@@ -77,17 +77,17 @@ function unfull(){
 
 
 //websocket
-/*var socket = new WebSocket('ws://' + window.location.host + '/ccs/websocket/pushmsg');
+var socket = new WebSocket('ws://' + window.location.host + '/ccs/pushmsg');
 
-scoket.onmessgae = function(messsage){
-	alert("来消息了 ：" + messgae.data);
+socket.onmessage = function(message){
+	alert("来消息了 ：" + message.data);
 }
 
 socket.onopen = function(){
 	alert("连接了 ");
+	//socket.send("admin si come in !!!");
 }
 
-scoket.oclose=function(){
+socket.onclose=function(){
 	alert("关闭了 ");
 }
-*/
