@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<base href="/News30/">
+<base href="/ccs/">
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <link type="text/css" rel="stylesheet" href="easyui/themes/icon.css">
@@ -12,21 +12,12 @@
 <link href="css/manage.css" rel="stylesheet" type="text/css" />
 </head>
 <body class="easyui-layout" style="width: 960px; margin: 0px auto;">
-	<div data-options="region:'north'" style="height: 138px;">
+	<div data-options="region:'north'" style="height: 65px;">
 		<div id="header">
 			<div id="top_login">
-				<label> 欢迎【<span>${loginUser.uname}</span>】使用新闻系统系统
-				</label> <img src="images/friend_logo.gif" alt="Google" id="friend_logo" />
+				<label> 欢迎【<span>${loginUser.username}</span>】使用银行信用管理系统</label>
 			</div>
-			<div id="nav">
-				<div id="logo">
-					<img src="images/logo.jpg" alt="新闻中国" />
-				</div>
-				<div id="a_b01">
-					<img src="images/a_b01.gif" alt="" />
-				</div>
-				<!--mainnav end-->
-			</div>
+			<div id="nav"></div>
 		</div>
 	</div>
 	<div data-options="region:'south'" style="height: 130px;">
@@ -80,8 +71,7 @@
 		<div id="main" style="width: 500px; height: 250px;">
 			<div title="欢迎">
 				<h1 style="width: 100%; text-align: center; margin-top: 80px">
-					<label> 欢迎【<span>${loginUser.uname}</span>】使用新闻系统系统
-					</label>
+					<label> 欢迎【<span>${loginUser.username}</span>】使用银行信用管理系统</label>
 				</h1>
 			</div>
 		</div>

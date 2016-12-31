@@ -74,3 +74,20 @@ function full(){
 function unfull(){
 	$("body").layout("unfull");
 }
+
+
+//websocket
+/*var socket = new WebSocket('ws://' + window.location.host + '/ccs/websocket/pushmsg');
+
+scoket.onmessgae = function(messsage){
+	alert("来消息了 ：" + messgae.data);
+}
+
+socket.onopen = function(){
+	alert("连接了 ");
+}
+
+scoket.oclose=function(){
+	alert("关闭了 ");
+}
+*/
